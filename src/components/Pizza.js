@@ -49,9 +49,11 @@ export default function Pizza() {
       {pizzaData.map((p) => (
         <div className="pizza" key={p.name}>
           <img alt={p.name} src={p.photoName} />
-          <h3>{p.name}</h3>
-          <p>Ingredients: {p.ingredients}</p>
-          <p>${p.price}</p>
+          <div>
+            <h3>{p.name}</h3>
+            <p>Ingredients: {p.ingredients}</p>
+            <p>${p.price}</p>
+          </div>
         </div>
       ))}
     </> 
