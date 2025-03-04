@@ -47,14 +47,14 @@ export default function Pizza() {
   return (
     <>
       {pizzaData.map((p) => (
-        <div className="pizza" key={p.name}>
+        <li className="pizza" key={p.name}>
           <img alt={p.name} src={p.photoName} />
           <div>
             <h3>{p.name}</h3>
             <p>Ingredients: {p.ingredients}</p>
             <p>${p.price}</p>
           </div>
-        </div>
+        </li>
       ))}
     </> 
   );
