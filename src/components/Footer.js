@@ -12,9 +12,12 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <p>
-        We are {isOpen ? 'Open' : 'closed'}.
-      </p>
+      <div className="order">
+        {isOpen ?
+          <p>We're open until {closeHour}:00PM. Come visit us or order online!</p> :
+          <p>We're closed. We will open at {openHour}:00AM. Be sure to come visit us or order online!</p>
+        }
+      </div>
     </footer>
   );
 }
